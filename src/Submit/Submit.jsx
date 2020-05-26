@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import List from "./List";
+import { List } from "../List/List";
 
 function Submit() {
   function Сomparison(e) {
@@ -14,4 +14,4 @@ function Submit() {
   return <input type="submit" value="ВОЙТИ" onClick={Сomparison} />;
 }
 
-export default Submit;
+export { Submit };

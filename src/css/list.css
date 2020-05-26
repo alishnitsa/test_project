@@ -1,4 +1,4 @@
-@import "clearing.css";
+@import "./clearing.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 html {
   background: #f7f7f7;
@@ -25,7 +25,7 @@ html {
   height: 47px;
   padding: 0 48px;
   background: #fff;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.07);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
 }
 .list_desktop nav .link {
   min-width: 47px;
@@ -100,13 +100,14 @@ html {
   margin-right: 29px;
   padding: 16px;
 }
+
 .list_desktop .gradient {
   position: fixed;
   bottom: 0px;
   left: 0px;
   height: 44px;
   width: 100%;
-  background: linear-gradient(180deg, rgba(247,247,247,0) 0%, #f7f7f7 100%);
+  background: linear-gradient(180deg, rgba(247, 247, 247, 0) 0%, #f7f7f7 100%);
 }
 select,
 option {

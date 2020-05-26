@@ -1,7 +1,19 @@
 import React from "react";
-import abbreviationName from "./abbreviation";
-import rounding from "./rounding";
-import { openChange } from "./openOrCloseChange";
+
+import { openChange } from "../scripts/openOrCloseChange";
+import { Change } from "../Change/Change";
+
+// class Person extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.openChange = this.openChange.bind(this);
+//   }
+
+// }
+
+const abbreviationName = (name) => name.replace(/(\S)\S*/, " $1.");
+
+const rounding = (balance) => Number(balance).toFixed(1);
 
 const Person = (props) => (
   <section className="person" onClick={openChange}>
@@ -30,4 +42,4 @@ const Person = (props) => (
   </section>
 );
 
-export default Person;
+export { Person };
